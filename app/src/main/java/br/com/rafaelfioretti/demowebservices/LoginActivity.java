@@ -70,7 +70,7 @@ public class LoginActivity extends AppCompatActivity {
     EditText edtUsuario;
 
 
-    @BindView(R.id.edtSenha)
+    @BindView(R.id.edtSenha)git
     EditText edtSenha;
 
 
@@ -79,6 +79,7 @@ public class LoginActivity extends AppCompatActivity {
 
         if (isConnected()){
             new LoginTask().execute("https://webservicesfiap.herokuapp.com/login");
+
             //new LoginTask().execute("http://10.0.2.2:3000/login");
 
         }else{
