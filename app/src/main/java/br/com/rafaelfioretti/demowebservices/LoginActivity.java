@@ -78,7 +78,8 @@ public class LoginActivity extends AppCompatActivity {
     public void logar() {
 
         if (isConnected()){
-            new LoginTask().execute("http://10.0.2.2:3000/login");
+            new LoginTask().execute("https://webservicesfiap.herokuapp.com/login");
+            //new LoginTask().execute("http://10.0.2.2:3000/login");
 
         }else{
             Toast.makeText(this, "Você não está conectado", Toast.LENGTH_LONG);
